@@ -3,6 +3,9 @@ node_modules/
 dist/
 build/
 .local/
+api/
+app/
+mobile/
 .env
 *.sqlite*
 playwright-report/

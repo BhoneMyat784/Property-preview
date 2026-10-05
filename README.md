@@ -2,7 +2,7 @@
 
 Property Portal is a web-first property marketplace for Myanmar. Browse homes, apartments, and land for sale or rent in Yangon and Mandalay, then switch between Burmese and English.
 
-The current checkout contains the Express API and Expo web application together. The planned `api`, `app`, and `mobile` sibling Git repositories are not split out yet.
+The root checkout remains a working combined preview. Independent sibling projects are available in `api/`, `app/`, and `mobile/`, each with its own Git repository and project README.
 
 ## Run locally
 
@@ -46,6 +46,9 @@ npm run backup
 
 - [Server/API README](server/README.md) — API, database, seed data, uploads, and server workflows.
 - [Expo web app README](src/app/README.md) — routes, browser behavior, language support, and web development.
+- [API project README](api/README.md) — independent server project.
+- [Web app project README](app/README.md) — independent browser project.
+- [Mobile project README](mobile/README.md) — independent native Expo project.
 - [AGENTS.md](AGENTS.md) — stable technology choices and repository boundaries.
 - [SPEC.md](SPEC.md) — current feature specification, gaps, and prioritized roadmap.
 - [CLAUDE.md](CLAUDE.md) — contributor entry point that refers to `AGENTS.md`.
@@ -56,4 +59,4 @@ SQLite data and uploaded photos are kept in the local data directory configured 
 
 ## Current project shape
 
-The server lives under `server/`, Expo Router screens under `src/app/`, shared UI under `src/components/`, shared contracts under `src/shared/`, and committed SQLite migrations under `migrations/`. Keep those boundaries until the planned sibling repository split is approved.
+The combined preview keeps the server under `server/`, Expo Router screens under `src/app/`, shared UI under `src/components/`, shared contracts under `src/shared/`, and committed SQLite migrations under `migrations/`. The sibling projects contain the corresponding split copies and must remain independently versioned.

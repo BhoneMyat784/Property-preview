@@ -25,7 +25,7 @@ The current checkout is one repository with these logical areas:
 - `src/shared/` owns contracts, validation, and values shared by client and server.
 - `migrations/` contains committed SQLite schema migrations.
 
-The planned `api`, `app`, and `mobile` sibling Git repositories do not exist in the current checkout. Do not create placeholder repositories or move code between them unless that split is explicitly approved. When the split is approved, each repository must retain this boundary document and its own user-facing README.
+The independent `api`, `app`, and `mobile` Git repositories now live as sibling directories under this checkout. Each has its own `AGENTS.md`, `CLAUDE.md`, and user-facing `README.md`. The root checkout remains a working combined preview and documentation reference; changes to a split project should be made and committed in that project's repository.
 
 ## Server/client boundary
 
