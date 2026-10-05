@@ -25,7 +25,7 @@ The current checkout is one repository with these logical areas:
 - `src/shared/` owns contracts, validation, and values shared by client and server.
 - `migrations/` contains committed SQLite schema migrations.
 
-The independent `api`, `app`, and `mobile` Git repositories now live as sibling directories under this checkout. Each has its own `AGENTS.md`, `CLAUDE.md`, and user-facing `README.md`. The root checkout remains a working combined preview and documentation reference; changes to a split project should be made and committed in that project's repository.
+The independent `api`, `app`, and `mobile` Git repositories live as sibling directories under this checkout and are tracked as Git submodules pinned to published child commits. Each has its own `AGENTS.md`, `CLAUDE.md`, and user-facing `README.md`. The root checkout remains a working combined preview and documentation reference; changes to a split project should be made, committed, and pushed in that project's repository before updating and publishing the root submodule pointer.
 
 ## Server/client boundary
 

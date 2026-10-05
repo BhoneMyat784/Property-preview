@@ -1,0 +1,9 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/BhoneMyat784/Property-preview-api.git
+[submodule "app"]
+	path = app
+	url = https://github.com/BhoneMyat784/Property-preview-app.git
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/BhoneMyat784/Property-preview-mobile.git

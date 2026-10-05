@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Publishing"
+  short_description: "Publish public repos with root submodule references"
+  default_prompt: "Use $github-publish to publish this workspace's root, api, app, and mobile as public GitHub repositories, with the root tracking the projects as submodules."

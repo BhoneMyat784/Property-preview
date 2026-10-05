@@ -2,7 +2,29 @@
 
 Property Portal is a web-first property marketplace for Myanmar. Browse homes, apartments, and land for sale or rent in Yangon and Mandalay, then switch between Burmese and English.
 
-The root checkout remains a working combined preview. Independent sibling projects are available in `api/`, `app/`, and `mobile/`, each with its own Git repository and project README.
+The root checkout remains a working combined preview. Independent sibling projects are available in `api/`, `app/`, and `mobile/`, each with its own Git history and project README. The root tracks their published commits as Git submodules.
+
+## GitHub repositories
+
+- [Property-preview](https://github.com/BhoneMyat784/Property-preview) — combined preview, product specification, and workspace documentation.
+- [Property-preview-api](https://github.com/BhoneMyat784/Property-preview-api) — independent Express API.
+- [Property-preview-app](https://github.com/BhoneMyat784/Property-preview-app) — independent Expo web app.
+- [Property-preview-mobile](https://github.com/BhoneMyat784/Property-preview-mobile) — independent Expo native foundation.
+
+Clone the complete workspace:
+
+```bash
+git clone --recurse-submodules https://github.com/BhoneMyat784/Property-preview.git
+cd Property-preview
+```
+
+For an existing clone, initialize the projects at the recorded commits:
+
+```bash
+git submodule update --init --recursive
+```
+
+Make project changes inside the corresponding repository. Commit and push child changes first, then stage the changed submodule path in the root, commit its updated pointer, and push the root. A root commit records the child commit; it does not include uncommitted child files. Submodule checkouts start at a detached commit, so switch to the intended project branch before making changes.
 
 ## Run locally
 
