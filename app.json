@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Property Portal",
+    "slug": "property-portal",
+    "scheme": "propertyportal",
+    "version": "1.0.0",
+    "platforms": ["web", "ios", "android"],
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "name": "Property Portal"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "unstable_useServerRendering": true,
+          "unstable_useServerDataLoaders": true
+        }
+      ]
+    ],
+    "experiments": { "typedRoutes": true }
+  }
+}
